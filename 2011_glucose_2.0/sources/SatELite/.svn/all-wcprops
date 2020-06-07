@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/iasi/ledepotdelaurent/!svn/ver/326/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite
+END
+Profile.C
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Profile.C
+END
+SolverTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/SolverTypes.h
+END
+Profile.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Profile.h
+END
+Solver.C
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Solver.C
+END
+Solver_subsume.C
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Solver_subsume.C
+END
+BcnfWriter.iC
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/BcnfWriter.iC
+END
+Solver.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Solver.h
+END
+Solver_clause.iC
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Solver_clause.iC
+END
+Solver_debug.C
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Solver_debug.C
+END
+Heap.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Heap.h
+END
+TmpFiles.C
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/TmpFiles.C
+END
+Main.C
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/iasi/ledepotdelaurent/!svn/ver/326/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Main.C
+END
+TmpFiles.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/TmpFiles.h
+END
+VarOrder.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/VarOrder.h
+END
+Main.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Main.h
+END
+Queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Queue.h
+END
+Main_debug.C
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Main_debug.C
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/iasi/ledepotdelaurent/!svn/ver/321/Papiers/IJCAI09/sources/glucose_1.0/sources/SatElite/SatELite/Makefile
+END
