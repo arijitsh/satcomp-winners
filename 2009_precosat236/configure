@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# this may need g++-multilib to get installed
 cpt=yes # enforces competition settings if set to yes
 
 rm -f makefile
