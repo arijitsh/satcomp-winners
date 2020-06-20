@@ -1,6 +1,6 @@
 /**************************************************************************************************
 
-VarOrder.h -- (C) Niklas Een, Niklas Sörensson, 2004
+VarOrder.h -- (C) Niklas Een, Niklas Sï¿½rensson, 2004
 
 ADT for maintaining the variable ordering. It will keep a list of all decision
 variables sorted on the current activity.
@@ -66,14 +66,14 @@ Var VarOrder::select(double random_var_freq)
     // Random decision:
     if (drand(random_seed) < random_var_freq){
         Var next = irand(random_seed,assigns.size());
-        if (toLbool(assigns[next]) == l_Undef)
+        if (lbool(assigns[next]) == l_Undef)
             return next;
     }
 
     // Activity based decision:
     while (!heap.empty()){
         Var next = heap.getmin();
-        if (toLbool(assigns[next]) == l_Undef)
+        if (lbool(assigns[next]) == l_Undef)
             return next;
     }
 

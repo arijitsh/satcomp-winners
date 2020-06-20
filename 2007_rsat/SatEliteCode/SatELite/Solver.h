@@ -1,6 +1,6 @@
 /**************************************************************************************************
 
-Solver.h -- (C) Niklas Een, Niklas Sörensson, 2004
+Solver.h -- (C) Niklas Een, Niklas Sï¿½rensson, 2004
 
 A simple Chaff-like SAT-solver with support for incremental SAT.
 
@@ -372,8 +372,8 @@ struct Solver {
 
     // Helpers: (semi-internal)
     //
-    lbool   value(Var x) { return toLbool(assigns[x]); }
-    lbool   value(Lit p) { return sign(p) ? ~toLbool(assigns[var(p)]) : toLbool(assigns[var(p)]); }
+    lbool   value(Var x) { return lbool(assigns[x]); }
+    lbool   value(Lit p) { return sign(p) ? ~lbool(assigns[var(p)]) : lbool(assigns[var(p)]); }
 
     int     nAssigns (void) { return trail.size(); }
     int     nLiterals(void) { return n_literals; }

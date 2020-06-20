@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "x$1" = "x" ]; then
   echo "USAGE: SatELiteGTI <input CNF>"
@@ -8,8 +8,8 @@ fi
 TMP=/tmp/SatElite_temp
 SE=./SatElite
 RS=./rsat
-INPUT=$1; shift 
-shift 
+INPUT=$1; shift
+shift
 
 $SE $INPUT $TMP.cnf $TMP.vmap $TMP.elim
 X=$?
@@ -27,8 +27,8 @@ if [ $X == 0 ]; then
     #timeout/unknown, nothing to do, just clean up and exit.
     rm -f $TMP.cnf $TMP.vmap $TMP.elim $TMP.result
     exit $X
-  fi  
-  
+  fi
+
   #SATISFIABLE, call SatElite for model extension
   $SE +ext $INPUT $TMP.result $TMP.vmap $TMP.elim
   X=$?
@@ -36,7 +36,7 @@ elif [ $X == 11 ]; then
   #SatElite died, RSat must take care of the rest
   $RS $INPUT -s #"$@"#but we must force rsat to print out result here!!!
   X=$?
-fi    
+fi
 
 rm -f $TMP.cnf $TMP.vmap $TMP.elim $TMP.result
 exit $X

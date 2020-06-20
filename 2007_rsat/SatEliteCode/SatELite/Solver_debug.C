@@ -16,7 +16,7 @@ void Solver::checkConsistency(void)
     // Every occur list points to clauses containing the appropriate literals:
     for (int i = 0; i < nVars()*2; i++){
         vec<Clause>& cs = occur[i];
-        Lit          p  = toLit(i);
+        Lit          p  = Lit(i);
         for (int j = 0; j < cs.size(); j++)
             find(cs[j], p);
     }

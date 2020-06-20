@@ -21,7 +21,7 @@ using namespace std;
 
 #define elemsof(x) (sizeof(x) / sizeof(*(x)))
 
-#define macro static inline
+#define macro inline
 
 #ifndef PANIC   // (makefile may define PANIC to eg. 'throw message')
 #define PANIC(message) ( fflush(stdout), \
@@ -407,9 +407,10 @@ template <class T> macro bool operator >= (const T& x, const T& y) { return !(x 
 
 class lbool {
     int     value;
-    explicit lbool(int v) : value(v) { }
 
 public:
+    explicit lbool(int v) : value(v) { }
+
     lbool()       : value(0) { }
     lbool(bool x) : value((int)x*2-1) { }
     int toInt(void) const { return value; }
@@ -423,10 +424,10 @@ public:
     friend char  name   (lbool l) { static char name[4] = {'!','0','?','1'}; int x = l.value; x = 2 + ((x >> (sizeof(int)*8-2)) | (x & ~(1 << (sizeof(int)*8-1)))); return name[x]; }
 };
 
-const lbool l_True  = toLbool( 1);
-const lbool l_False = toLbool(-1);
-const lbool l_Undef = toLbool( 0);
-const lbool l_Error = toLbool(1 << (sizeof(int)*8-1));
+const lbool l_True  = lbool( 1);
+const lbool l_False = lbool(-1);
+const lbool l_Undef = lbool( 0);
+const lbool l_Error = lbool(1 << (sizeof(int)*8-1));
 
 
 //=================================================================================================

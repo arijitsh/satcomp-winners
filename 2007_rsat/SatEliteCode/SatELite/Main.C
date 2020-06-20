@@ -243,7 +243,7 @@ static void parse_BCNF(cchar* filename, Solver& S)
             c.clear();
             c.growTo(size);
             for (int i = 0; i < size; i++)
-                c[i] = toLit(p[i]);
+                c[i] = Lit(p[i]);
             p += size;
 
             S.addClause(c);     // Add clause.
@@ -348,7 +348,7 @@ static void parse_DIMACS_main(B& in, Solver& S) {
 	  char line[1000];
 
 	  readLine(line,in);
-	  
+
 	  int num_clause = 0;
 	  int num_var = 0;
 	  sscanf(line,"p cnf %d %d",&num_var,&num_clause);
@@ -357,7 +357,7 @@ static void parse_DIMACS_main(B& in, Solver& S) {
 	    printf("c Exiting...too many clauses\n");
 	    exit(11);
 	  }
-	  
+
 	}else
             readClause(in, S, lits),
             S.addClause(lits);
@@ -459,8 +459,8 @@ int main(int argc, char** argv)
 
     }else{
         // EXTEND A MODEL FROM MINISAT: [HACK!]
-        //      
-      
+        //
+
         if (output_file == NULL) fprintf(stderr, "ERROR! Result file from external SAT solver missing when using '+ext'.\n"), exit(1);
         if (varmap_file == NULL) fprintf(stderr, "ERROR! VarMap file from external SAT solver missing when using '+ext'.\n"), exit(1);
         if (elimed_file == NULL) fprintf(stderr, "ERROR! Elimed file from external SAT solver missing when using '+ext'.\n"), exit(1);
@@ -553,17 +553,17 @@ int main(int argc, char** argv)
 	FILE*   out = stdout;
 	printf("s SATISFIABLE\n");
 	printf("v ");
-	
+
 	//FILE* model = fopen("model.txt","w");
 
 	///* Knot commented out 10/27/06 to suppress printing out solution
-        if (out != NULL){ 
-            for (int i = 0; i < S.model.size(); i++) 
+        if (out != NULL){
+            for (int i = 0; i < S.model.size(); i++)
 	      if (S.model[i] != l_Undef){
-		fprintf(out, "%s%s%d", (i==0)?"":" ", (S.model[i]==l_True)?"":"-", i+1); 
+		fprintf(out, "%s%s%d", (i==0)?"":" ", (S.model[i]==l_True)?"":"-", i+1);
 		//fprintf(model,"%s%s%d", (i==0)?"":" ", (S.model[i]==l_True)?"":"-", i+1);
 	      }
-        } 
+        }
         fprintf(out, " 0\n");
         //fprintf(model, " 0\n");
 	//fclose(model);
